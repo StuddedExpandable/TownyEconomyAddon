@@ -40,7 +40,7 @@ public class TownyEconomyCommands implements CommandExecutor
                        if (getTEA.getEcon().has(s.getName(), amount))
                        {
                            EconomyResponse  wDp =getTEA.getEcon().withdrawPlayer(s.getName(), amount);
-                           getTEF.getBanks().(p.getUniqueId().toString() + ".bank");
+                           getTEF.getBanks().set(p.getUniqueId().toString() + ".bank");
                            s.sendMessage(ChatColor.translateAlternateColorCodes('&', getTEF.getLang().getString("Messages.WithdrawAmount")));
                        } else {
 
